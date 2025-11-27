@@ -38,6 +38,10 @@ int _printf(const char *format, ...)
 		else
 		{
 			i++;
+			if (format[i] == '\0')
+			{
+            	return (-1);
+			}
 			temp = get_func(format[i], args);
 
 			if (temp == -1)
