@@ -1,0 +1,52 @@
+.TH _PRINTF 3 "Novembre 2025" "Version 1.0" "Fonctions C personnalisées"
+.SH NOM
+_printf \- Fonction personnalisée pour afficher une chaîne formatée
+
+.SH SYNOPSIS
+.B #include "main.h"
+.br
+.B int _printf(const char *format, ...);
+
+.SH DESCRIPTION
+La fonction
+.B _printf()
+affiche une chaîne de caractères formatée, similaire au
+.B printf(3)
+standard, mais avec un ensemble limité de spécificateurs pris en charge.
+
+Elle parcourt la chaîne de format fournie et imprime chaque caractère.
+Lorsqu'un caractère '%' est rencontré, la fonction recherche une fonction
+associée au spécificateur suivant et exécute celle-ci.
+
+Les spécificateurs pris en charge sont :
+
+.TP
+.B %c
+Affiche un caractère.
+
+.TP
+.B %s
+Affiche une chaîne de caractères.
+
+.TP
+.B %%
+Affiche le caractère '%'.
+
+.TP
+.B %d, %i
+Affiche un entier signé au format décimal.
+
+.SH VALEUR RENVOYÉE
+La fonction renvoie le nombre total de caractères imprimés.
+
+Si
+.I format
+vaut NULL, la fonction retourne \-1.
+
+.SH AUTEURS
+Projet développé par :
+.br
+\- Alexis Laubert & Mila Audu
+
+.SH VOIR AUSSI
+printf(3), putchar(3)
