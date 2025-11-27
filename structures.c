@@ -21,11 +21,11 @@ int get_func(char s, va_list ap)
 	int i = 0;
 
 	funcs_t funcs[] = {
-		{'c', print_char},
-		{'s', print_string},
-		{'%', print_percent},
-		{'d', print_int},
-		{'i', print_int},
+    	{'c', print_char},
+    	{'s', print_string},
+    	{'%', print_percent},
+    	{'d', print_int},
+    	{'i', print_int},
 		{'\0', NULL}
 	};
 

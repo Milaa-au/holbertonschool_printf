@@ -37,6 +37,7 @@ int _printf(const char *format, ...)
 		}
 		else
 		{
+			i++;
 			temp = get_func(format[i], args);
 
 			if (temp == -1)
