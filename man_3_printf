@@ -1,6 +1,5 @@
-.TH _printf 3 "Novembre 2025" "Version 1.0" "Fonctions C personnalisées"
-
-.SH NAME
+.TH _PRINTF 3 "Novembre 2025" "Version 1.0" "Fonctions C personnalisées"
+.SH NOM
 _printf \- Fonction personnalisée pour afficher une chaîne formatée
 
 .SH SYNOPSIS
@@ -37,16 +36,17 @@ Affiche le caractère '%'.
 .B %d, %i
 Affiche un entier signé au format décimal.
 
-.SH RETURN VALUE
+.SH VALEUR RENVOYÉE
 La fonction renvoie le nombre total de caractères imprimés.
+
 Si
 .I format
-vaut NULL, la fonction renvoie \-1.
+vaut NULL, la fonction retourne \-1.
 
-.SH AUTHORS
-Fonction développée par :
+.SH AUTEURS
+Projet développé par :
 .br
 \- Alexis Laubert & Mila Audu
 
-.SH SEE ALSO
+.SH VOIR AUSSI
 printf(3), putchar(3)
