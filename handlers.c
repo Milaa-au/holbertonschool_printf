@@ -26,9 +26,9 @@ int print_char(va_list ap)
 
 int print_percent(va_list ap)
 {
-	(void)ap;
-	putchar('%');
-	return (1);
+    (void)ap;
+    putchar('%');
+    return (1);
 }
 
 /**
