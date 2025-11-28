@@ -34,15 +34,17 @@ int _printf(const char *format, ...)
 		{
 			putchar(format[i]);
 			count++;
+			i++;
 		}
 		else
 		{
 			i++;
 			if (format[i] == '\0')
 			{
-				count = -1;
-            	return (-1);
+				va_end(args);
+				return (-1);
 			}
+
 			temp = get_func(format[i], args);
 
 			if (temp == -1)
@@ -54,8 +56,9 @@ int _printf(const char *format, ...)
 			{
 				count += temp;
 			}
+			i++;
 		}
-		i++;
+		
 	}
 
 	va_end(args);
